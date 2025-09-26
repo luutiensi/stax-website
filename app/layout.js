@@ -1,20 +1,14 @@
 import "./globals.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "STAX",
-  description: "Giải pháp kế toán & thuế cho doanh nghiệp",
+  title: "STAX Website",
+  description: "Trang web chính thức của STAX",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="vi">
-      <body>
-        <Header />
-        {children}
-        <Footer />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
